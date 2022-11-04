@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+
+.homepage {
+    overflow: hidden;
+	min-height: 100%;
+	position: relative;
+    background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+}
+
+.container {
+    max-width: 1260px;
+    min-height: 100vh;
+    padding: 15px;
+	margin: 0 auto;
+}
+
+.title {
+    position: absolute;
+    width: 496px;
+    height: 249px;
+    top: 30%;
+}
+h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    align-items: center;
+    letter-spacing: 1px;
+    opacity: 1;
+    color: #1E212C; 
+    animation-name: text;
+    animation-duration: 5s;
+    /* animation-delay: 3s; */
+    animation-iteration-count: 1;
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.illustration {
+    position: absolute;
+    width: 602px;
+    height: 551px;
+    left: 50%;
+    top: 20%;
+}
+
+.illustration__girl {
+    position: absolute;
+    left: 28.77%;
+    right: 15.74%;
+    top: 16.76%;
+    bottom: 0.1%;
+    animation-name: girl;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes girl{
+    0%{
+    bottom: -500%;
+    opacity: 0;
+    }
+    75%{
+    top: 50%;
+    opacity: 0;
+    }
+    100%{
+    bottom:  0%;
+    opacity: 1;
+    }
+}
+
+.illustration__light {
+    position: absolute;
+    left: 11.18%;
+    right: 41.35%;
+    top: 12.65%;
+    bottom: 48.4%;
+    animation-name: light;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes light{
+    0%{
+    top: -500%;
+    opacity: 0;
+    }
+    75%{
+    opacity: 0;
+    }
+    100%{
+    top: 0%;
+    opacity: 1;
+    }
+}
+
+.illustration__plant {
+    position: absolute;
+    left: 4.34%;
+    right: 80.81%;
+    top: 32.8%;
+    bottom: 48.4%;
+    animation-name: plant;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes plant{
+    0%{
+    top: -500%;
+    opacity: 0;
+    }
+    75%{
+    opacity: 0;
+    }
+    100%{
+    top: 0%;
+    opacity: 1;
+    }
+}
+
+
+.illustration__table {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 51.56%;
+    bottom: 0%;
+    animation-name: table;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes table{
+    0%{
+    left: -500%;
+    opacity: 0;
+    }
+    75%{
+    opacity: 0;
+    }
+    100%{
+    left: 0%;
+    opacity: 1;
+    }
+}
+
+
+
+
+.illustration__computer {
+    position: absolute;
+    left: 11.74%;
+    right: 41.25%;
+    top: 12.53%;
+    bottom: 48.29%;
+    animation-name: computer;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes computer{
+    0%{
+    top: -500%;
+    opacity: 0;
+    }
+    75%{
+    opacity: 0;
+    }
+    100%{
+    top: 0%;
+    opacity: 1;
+    }
+}
+
+
+.illustration__lamp {
+    position: absolute;
+    left: 11.17%;
+    right: 4.78%;
+    top: 0%;
+    bottom: 48.21%;
+    animation-name: lamp;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes lamp{
+    0%{
+    right: -500%;
+    opacity: 0;
+    }
+    75%{
+    opacity: 0;
+    }
+    100%{
+    right: 0%;
+    opacity: 1;
+    }
+}
+
+
+.homepage__decor--1 {
+    background: url('../img/dekor/shapes.svg') 0 0 no-repeat;
+    position: absolute;
+    left: 86.88%;
+    right: 7.4%;
+    top: 3.04%;
+    bottom: 86.78%;
+    transform: rotate(-45deg);
+    animation-name: one;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes one {
+    0%{
+        top: 1%;
+        transform: rotate(45deg);
+    }
+    100%{
+        top: 3.4%;
+        transform: rotate(-45deg);
+    }
+}
+.homepage__decor--2 {
+    background: url('../img/dekor/shapestwo.svg') 0 0 no-repeat;
+    position: absolute;
+    left: 9.27%;
+    right: 85.73%;
+    top: 21.2%;
+    bottom: 69.91%;
+    animation-name: two;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes two {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 50px;
+    }
+}
+
+.btn {
+    position: absolute;
+    width: 372px;
+    height: 52px;
+    top: 65%;
+}
+
+.btn__outline-large {
+    display:inline-block;
+    width: 148px;
+    height: 52px;
+    font-family: "Lato";
+    font-weight: 700;
+	border: 1px solid #FF3F3A;
+    border-radius: 4px;
+	color:#FF3F3A;
+	padding: 15px 40px;
+}
+.btn__outline-large:hover {
+    color: #fff;
+	border: 1px solid #FF3F3A;
+	background-color: #FF3F3A;
+}
+
+.btn__solid-large {
+    position: absolute;
+    width: 200px;
+    height: 52px;
+    left: 172px;
+    font-family: "Lato";
+    font-weight: 700;
+    padding: 15px 54px;
+    background-color: #FF3F3A;
+    color: white;
+    border-radius: 4px;
+} 
+
+.btn__solid-large:active {
+    position: absolute;
+    width: 200px;
+    height: 52px;
+    left: 172px;
+    font-family: "Lato";
+    font-weight: 700;
+    padding: 15px 54px;
+    background-color: #FF3F3A;
+    color: white;
+    border-radius: 4px;
+    animation-name: btnrann;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes btnrann {
+    0%{
+        top: 0%;
+        transform-origin: 0px 52px;
+    }
+    40%{
+        top: 0%;
+        transform-origin: 0px 52px;
+        transform: rotate(130deg);
+    }
+    60%{
+        top: 0%;
+        transform-origin: 0px 52px;
+        transform: rotate(70deg);
+    }
+    70%{
+        top: 0%;
+        transform-origin: 0px 52px;
+        transform: rotate(110deg);
+    }
+    80%{
+        top: 0%;
+        transform-origin: 0px 52px;
+        transform: rotate(80deg);
+    }
+    85%{
+        top: 0%;
+        transform-origin: 0px 52px;
+        transform: rotate(100deg);
+    }
+    100%{
+        transform: rotate(90deg);
+        top: 1000px;
+    }
+}
